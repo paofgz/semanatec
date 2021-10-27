@@ -42,8 +42,9 @@ export default {
                 const prices = response.data.prices
                 for (let price of prices){
                     console.log(price)
-                    date = new Date(price[0] * 1000);
-                    var formattedTime = date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes()
+                    let dateObject = new Date(price[0]);
+                    date = dateObject.toLocaleString()
+                    var formattedTime = date
                     dates.push(formattedTime)
                     data.push(price[1].toFixed(2))
                 }
