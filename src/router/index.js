@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Pokemon from '../views/Pokemon'
+import Bitcoin from '../views/Bitcoin'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes = [
     name: 'Pokemon',
     component: Pokemon
   },  
+  {
+    path:'/bitcoin',
+    name:'Bitcoin',
+    component:Bitcoin
+  },
   {
     path: '/about',
     name: 'About',
