@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2 id="titulo">Hola {{usuario.nombre}} {{usuario.apellido}}, presionaste {{contador}} veces el botón</h2>
+    <h2>Hola {{usuario.nombre}} {{usuario.apellido}}, presionaste {{contador}} veces el botón</h2>
     <v-card style="padding:40px;">
     <v-text-field
       id="nombre"
