@@ -3,17 +3,19 @@
     <h2>Hola {{usuario.nombre}} {{usuario.apellido}}, presionaste {{contador}} veces el botón</h2>
     <v-card style="padding:40px;">
     <v-text-field
+      id="nombre"
       v-model="usuario.nombre"
       label="Dime tu nombre"
       hide-details="auto"
     ></v-text-field>
     <v-text-field
+    id="apellido"
       v-model="usuario.apellido"
       label="Dime tu apellido"
       hide-details="auto"
     ></v-text-field>    
     <div style="margin-top:20px;">Contador {{contador}}</div>
-    <v-btn  style="margin-top:20px;" elevation="2" @click="agregarAlContador" dark color="purple">Aumentar contador</v-btn>      
+    <v-btn id="botonAgregar"  style="margin-top:20px;" elevation="2" @click="agregarAlContador" dark color="purple">Aumentar contador</v-btn>      
     </v-card>
     <h2 v-if="cargandoPokemones">Cargando pokemones...</h2>
     <v-row v-if="!cargandoPokemones" style="margin-top:30px;">
