@@ -58,8 +58,8 @@ export default {
     const map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/mapbox/navigation-night-v1",
-      center: [-100.562938, 38.4816921],
-      zoom: 4,
+      center: [-100.486052, 37.830348],
+      zoom: 3.5,
     });
     map.on('load', () => {
     map.addSource('states', {
@@ -222,11 +222,30 @@ popup.remove();
 }
 .mapboxgl-popup{
     padding-bottom: 15px;
-    color:black;
+    color:#fafafa;
     max-width: 400px;
     text-align: center;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
+.mapboxgl-popup-content {
+  background-color: #393E46;
+}
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+    border-bottom-color: #393E46;;
+    }
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+    border-top-color: #393E46;;
+    }
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+    border-right-color: #393E46;;
+    }
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+    border-left-color: #393E46;;
+    }
 .text-container {
   max-width: 500px;
   display: flex;
