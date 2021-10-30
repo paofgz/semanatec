@@ -7,13 +7,6 @@
                 <CovidChart/>
             </v-col>
         </v-row>
-        <v-btn
-        elevation="2"
-        large
-        outlined
-        style="margin:10px"
-        @click="viewTable()"
-        >Go back</v-btn>
     </v-container>
 </template>
 
@@ -26,9 +19,6 @@ export default {
     data : () =>({    
     }),
     methods: {
-        viewTable(){
-            this.$router.push('/covid');
-        },
     }
 }
 </script>

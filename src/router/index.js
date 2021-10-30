@@ -6,6 +6,8 @@ import Bitcoin from '../views/Bitcoin'
 import Todo from '../views/Todo'
 import Covid from '../views/Covid'
 import CovidSearch from '../views/CovidSearch'
+import Country from '../views/CountryInfo.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -38,6 +40,11 @@ const routes = [
     path: '/covid/search',
     name: 'CovidSearch',
     component: CovidSearch
+  },
+  {
+    path: '/covid/:code',
+    name: 'Country',
+    component: Country
   },
   {
     path: '/about',
